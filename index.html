@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>color mixer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div>
+        <label for="red">r</label>
+        <input
+          type="range"
+          class="colorRange"
+          min="0"
+          max="255"
+          value="240"
+          id="red"
+          step="1"
+        />
+      </div>
+      <div>
+        <label for="green">g</label>
+        <input
+          type="range"
+          class="colorRange"
+          min="0"
+          max="255"
+          value="80"
+          id="green"
+          step="1"
+        />
+      </div>
+      <div>
+        <label for="blue">b</label>
+        <input
+          type="range"
+          class="colorRange"
+          min="0"
+          max="255"
+          value="70"
+          id="blue"
+          step="1"
+        />
+      </div>
+      <h1 id="rgb-code"></h1>
+      <button id="random-color-btn">Random Color!</button>
+    </header>
+    <script src="script.js"></script>
+  </body>
+</html>

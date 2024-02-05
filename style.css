@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: monospace;
+}
+body {
+  --red: 0;
+  --green: 0;
+  --blue: 0;
+  background-color: rgb(var(--red), var(--green), var(--blue));
+  margin: 0;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.2);
+  justify-content: space-evenly;
+  align-items: baseline;
+  padding: 2rem;
+}
+
+h1 {
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
+button {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+#red {
+  accent-color: red;
+}
+
+#green {
+  accent-color: green;
+}
+
+#blue {
+  accent-color: blue;
+}
+
+label {
+  margin-left: 1.5rem;
+  font-size: 2rem;
+}
