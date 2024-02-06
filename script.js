@@ -60,5 +60,3 @@ function randomColor() {
 }
 // event listener
 btnRandomColor.addEventListener("click", randomColor);
-// random color api
-// https://dummy-apis.netlify.app/api/color
