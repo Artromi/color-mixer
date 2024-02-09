@@ -20,7 +20,7 @@ function changeCode() {
   const greenRange = green.value;
   const blueRange = blue.value;
 
-  rgb.innerHTML =
+  rgb.textContent =
     "rgb(" + redRange + ", " + greenRange + ", " + blueRange + ")";
 }
 
@@ -43,14 +43,13 @@ function randomColor() {
       return response.json();
     })
     .then((data) => {
+      // changeBackground();
       console.log(data);
-      const redRange = red.value;
-      const greenRange = green.value;
-      const blueRange = blue.value;
       document.body.style.setProperty(
         "background-color",
         "rgb(" + data.rgb.r + ", " + data.rgb.g + ", " + data.rgb.b + ")"
       );
+
       rgb.innerHTML =
         "rgb(" + data.rgb.r + ", " + data.rgb.g + ", " + data.rgb.b + ")";
       red.value = data.rgb.r;
